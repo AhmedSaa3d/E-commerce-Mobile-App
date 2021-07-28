@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productDataDisplay">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/green"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="product Data"
+            android:textSize="50sp"
+            android:layout_gravity="center"
+            android:paddingBottom="20sp"/>
+
+        <TextView
+            android:id="@+id/pNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pN : "
+            android:textSize="30sp"
+            android:paddingBottom="10pt"
+            android:paddingTop="10px"/>
+
+        <TextView
+            android:id="@+id/pcatTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pC : "
+            android:textSize="30sp"
+            android:paddingBottom="10pt"
+            android:paddingTop="10px"/>
+        <TextView
+            android:id="@+id/pPrcieTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pP = "
+            android:textSize="30sp"
+            android:paddingBottom="10pt"
+            android:paddingTop="10px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        android:paddingBottom="10pt"
+        android:paddingTop="10px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity = "
+            android:textSize="30sp"
+            android:paddingTop="10px"/>
+        <TextView
+            android:id="@+id/pQuantityTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  "
+            android:textSize="30sp"/>
+        <TextView
+            android:id="@+id/pIncreaseTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_marginLeft="90sp"
+            android:textSize="30sp"
+            android:onClick="IncAmountFunc"/>
+        <TextView
+            android:id="@+id/pDecreaseTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:layout_marginLeft="50sp"
+            android:textSize="30sp"
+            android:onClick="decAmountFunc"/>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/pTotalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pT = "
+            android:textSize="30sp"
+            android:paddingBottom="10pt"
+            android:paddingTop="10px"/>
+
+        <Button
+            android:id="@+id/conBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark"
+            android:text="Confirm Editing"
+            android:textAllCaps="false"
+            android:padding="20sp"
+            android:layout_marginTop="150sp"
+            android:textColor="@color/green"
+            android:layout_gravity="bottom"
+            android:textSize="24sp"
+            android:onClick="confirmFunc"/>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

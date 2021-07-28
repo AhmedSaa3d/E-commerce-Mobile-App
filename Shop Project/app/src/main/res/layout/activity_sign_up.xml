@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:paddingTop="25dp"
+        android:background="@color/green"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/green"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="@color/green"
+                app:srcCompat="@drawable/icpersonadd"
+                tools:ignore="VectorDrawableCompat" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New Customer"
+                android:paddingLeft="30sp"
+                android:textSize="25sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text=""
+            android:hint="Your Name"
+            android:paddingBottom="10dp"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/userNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text=""
+            android:hint="Your Username"
+            android:paddingBottom="10dp"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/userPasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Password"
+            android:text=""
+            android:paddingBottom="10dp"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/jobText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text=""
+            android:hint="Your Job"
+            android:paddingBottom="10dp"
+            tools:ignore="LabelFor" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:paddingBottom="10dp"
+        android:background="@color/green"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Gender : "
+            android:layout_marginLeft="10sp"
+            android:textColor="@color/dark"
+            android:textSize="19sp"/>
+        <RadioButton
+            android:id="@+id/radio1Btn"
+            android:layout_marginRight="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="@color/dark"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:id="@+id/radio2Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="@color/dark"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Birthdate :- "
+            android:paddingLeft="6dp"
+            android:textSize="19sp"/>
+
+        <CalendarView
+            android:id="@+id/calenderView"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"/>
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/dark"
+            android:text="Add Customer"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"
+
+            android:onClick="submitFunc"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

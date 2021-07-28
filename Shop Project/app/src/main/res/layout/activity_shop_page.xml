@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:background="@color/green"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/dark"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="50sp"
+                    android:background="@color/dark"
+                    app:srcCompat="@drawable/ic_baseline_search_24"
+                    tools:ignore="VectorDrawableCompat" />
+                <Button
+                    android:id="@+id/searchBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/dark"
+                    android:text="Search Page"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green"
+                    android:textSize="15sp"
+                    android:onClick="searchFunc"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/shopproductText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Products"
+                android:text=""
+                android:enabled="false"
+                android:textSize="24sp"/>
+            </LinearLayout>
+
+        <ListView
+            android:id="@+id/listId"
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:textSize="20sp" />
+         <Button
+            android:id="@+id/cartBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark"
+            android:text="Go To Cart List"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:layout_gravity="bottom"
+            android:textSize="24sp"
+            android:onClick="goToCartFunc"/>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

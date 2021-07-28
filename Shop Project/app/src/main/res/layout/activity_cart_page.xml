@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cartPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/green"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/green"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="@color/green"
+                app:srcCompat="@drawable/shopping"
+                tools:ignore="VectorDrawableCompat"
+                android:layout_marginLeft="50sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bought Items"
+                android:textSize="30sp"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listId1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/totalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total = "
+            android:textSize="25sp"
+            android:paddingTop="10px"/>
+        <TextView
+            android:id="@+id/longTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude : "
+            android:textSize="25sp"
+            android:paddingTop="10px"/>
+        <TextView
+            android:id="@+id/altTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altitude : "
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/cconfirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark"
+            android:text="Confirm buying"
+            android:textAllCaps="false"
+            android:padding="20sp"
+            android:textColor="@color/green"
+            android:layout_gravity="bottom"
+            android:textSize="24sp"
+            android:onClick="confirmFunc"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
