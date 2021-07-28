@@ -11,3 +11,12 @@
 - Define customer’s birthdate using calendar.
 - Remember me & forget password recovery facilities.
 ## System Photos :
+![](img/login.jpg)
+![](img/register.jpg)
+![](img/resetpass.jpg)
+![](img/mainpage.jpg)
+![](img/searchpage.jpg)
+![](img/voice.jpg)
+![](img/camera.jpg)
+![](img/cart.jpg)
+![](img/editproduct.jpg)
